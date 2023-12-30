@@ -1,0 +1,21 @@
+:root {
+  --PRIMARY-COLOR: #293264;
+  --BTN-COLOR: #4d5b9e;
+  --RED: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+p,
+button {
+  color: var(--PRIMARY-COLOR);
+}
