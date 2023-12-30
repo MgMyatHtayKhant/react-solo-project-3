@@ -1,0 +1,145 @@
+.container {
+  background-color: #f5f7fb;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1rem;
+}
+
+.btn {
+  color: #fff;
+  background-color: var(--BTN-COLOR);
+  border: none;
+  border-radius: 1rem;
+  padding-block: 12px;
+  cursor: pointer;
+}
+
+.btn:active {
+  opacity: 0.8;
+}
+
+/* Intro Page! */
+
+.intro-page {
+  text-align: center;
+}
+
+.intro-page .title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.intro-page .description {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-page .start-btn {
+  width: 95%;
+  font-size: 1.5rem;
+}
+
+/* Questions Page! */
+
+.questions-page .check-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem 0;
+  gap: 2rem;
+}
+
+.check-container.checked {
+  justify-content: flex-end;
+}
+
+.check-container.checked .score-description {
+  font-weight: 600;
+}
+
+.check-container .question-btn {
+  padding-inline: 2rem;
+  font-size: 1rem;
+}
+
+.questions-page .question {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.question .question-text {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.question .answer {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.answer .answer-btn {
+  background-color: transparent;
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.answer .answer-btn.selected {
+  border: none;
+  background-color: #d6dbf5;
+}
+
+.answer.check .answer-btn {
+  opacity: 0.5;
+}
+
+.answer.check .answer-btn.selected {
+  background-color: #f8bcbc;
+}
+
+.answer.check .answer-btn.corrected {
+  border: none;
+  opacity: 1;
+  background-color: #94d7a2;
+}
+
+@media (max-width: 992px) {
+  .question .question-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 756px) {
+  .question .answer {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-block: 2rem 1rem;
+  }
+
+  .questions-page .check-container {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .questions-page .check-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .answer .answer-btn {
+    padding-inline: 1rem;
+  }
+}
